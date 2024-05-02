@@ -4,7 +4,11 @@
 import requests
 from colorama import Fore
 
-print (Fore.YELLOW + "¡Esto es un buscador de peliculas!")
+title = "Buscador de peliculas"
+
+print (Fore.YELLOW + title)
+print ("-" * len(title))
+
 
 name = input(Fore.GREEN + "\nIntroduce una pelicula: " + Fore.CYAN)
 url="https://search.imdbot.workers.dev/?q="+name
@@ -23,3 +27,10 @@ else:
 	print(Fore.GREEN + "Titulo:" + Fore.CYAN + f" {title}" + Fore.GREEN)
 	print(Fore.GREEN + "Año:" + Fore.CYAN + f" {year}" + Fore.GREEN)
 	print(Fore.GREEN + "Actores:" + Fore.CYAN + f" {actors}" + Fore.GREEN)
+
+
+
+
+
+
+
